@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParallelTestSuite" parallel="classes" thread-count="4">
+    <test name="Regression">
+        <classes>
+            <class name="Tests.SignInTest"/>
+            <class name="Tests.OnlineBankingTest"/>
+            <class name="Tests.TransferFundsTest"/>
+            <class name="Tests.FeedbackTest"/>
+        </classes>
+    </test>
+</suite>
